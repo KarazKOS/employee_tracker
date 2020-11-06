@@ -4,7 +4,7 @@ const viewOptions = [
   "View Departments",
   "View Roles",
   "View Employees",
-  "Update Employees",
+  "Update Employee",
   "Exit",
 ];
 
@@ -14,7 +14,12 @@ const employeeOptions = [
   "Tom Tcshida",
   "Walt Disney",
   "Kobe Bryant",
+  "Mike Tyson",
+  "Abraham Lincoln",
+  "exit",
 ];
+
+const updateOptions = ["First Name", "Last Name", "Role", "exit"];
 
 runSearch();
 
