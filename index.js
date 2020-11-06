@@ -39,7 +39,12 @@ function runSearch() {
         case viewOptions[2]:
           employeeView();
           break;
+
         case viewOptions[3]:
+          connection.end();
+          break;
+
+        case viewOptions[4]:
           connection.end();
           break;
       }
