@@ -4,21 +4,21 @@ CREATE DATABASE employee_db;
 
 USE employee_db
 
-CREATE TABLE department (
+CREATE TABLE department(
 	id INTEGER NOT NULL auto_increment PRIMARY KEY,
     name VARCHAR(30)
 );
 
-CREATE TABLE role (
+CREATE TABLE role(
 	id INTEGER NOT NULL auto_increment PRIMARY KEY, 
-    title VARCHAR(30);
+    title VARCHAR(30),
     salary DECIMAL, 
     department_id INTEGER, 
     FORIEGN KEY (department_id) REFERENCES department (id)
 
 );
 
-CREATE TABLE employee (
+CREATE TABLE employee(
 	id INTEGER NOT NULL auto_increment PRIMARY KEY,
     first_name VARCHAR(30),
     last_name VARCHAR(30),

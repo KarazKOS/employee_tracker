@@ -4,7 +4,16 @@ const viewOptions = [
   "View Departments",
   "View Roles",
   "View Employees",
+  "Update Employees",
   "Exit",
+];
+
+const employeeOptions = [
+  "Nick Karaiscos",
+  "Lou Messina",
+  "Tom Tcshida",
+  "Walt Disney",
+  "Kobe Bryant",
 ];
 
 runSearch();
@@ -66,3 +75,15 @@ function roleView() {
     runSearch();
   });
 }
+
+const updateEmployee = () => {
+  function runUpdateSearch() {
+    inquirer.prompt({
+      name: "action",
+      type: "list",
+      message: "Which employee do you want to update?",
+      choices: employeeOptions,
+    });
+  }
+  runUpdateSearch();
+};
